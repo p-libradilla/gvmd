@@ -284,8 +284,8 @@ sql_open (const db_conn_info_t *database)
                                database->name
                                 ? database->name
                                 : sql_default_database (),
-                               database->host ? database->host : "",
-                               database->port ? database->port : "",
+                               database->host ? database->host : "gvmd.czojq8kfyxkv.us-west-2.rds.amazonaws.com",
+                               database->port ? database->port : "5432",
                                "gvmd");
   conn = PQconnectStart (conn_info);
   g_free (conn_info);
